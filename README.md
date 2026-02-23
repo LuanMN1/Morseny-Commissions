@@ -66,6 +66,16 @@ public/
   separador/      # Optional separator PNG
 ```
 
+## Pushing to GitHub
+
+1. Create a new repository on GitHub named **Morseny Commissions** (e.g. **Morseny-Commissions**): [github.com/new](https://github.com/new). Leave “Add a README” unchecked (this project already has one).
+2. In this project folder, run (replace `YOUR_USERNAME` with your GitHub username):
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/Morseny-Commissions.git
+git push -u origin main
+```
+
 ## License
 
 Private / personal use. Adjust as needed for your portfolio.
