@@ -1,0 +1,114 @@
+.gallery-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.gallery-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Bloco único: título + subtítulo + grid 2x2 abaixo */
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.section-spacer {
+  display: none;
+}
+
+/* Âncora do atalho: scroll para o título + subtítulo, com espaço para o header fixo */
+.section-anchor {
+  scroll-margin-top: 5rem;
+}
+
+.section-header {
+  text-align: left;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--baby-blue-900);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--baby-blue-700);
+  line-height: 1.5;
+}
+
+/* Grid 2x2 abaixo dos subtítulos */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.gallery-grid--2x2 .art-card {
+  margin-bottom: 0;
+}
+
+/* Desktop: conteúdo alterna esquerda/direita */
+@media (min-width: 900px) {
+  .gallery-section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .section-spacer {
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .section-content {
+    flex: 0 0 52%;
+    max-width: 520px;
+  }
+
+  /* Personagens, Outros: conteúdo à direita */
+  .gallery-section--content-right .section-spacer {
+    order: 1;
+  }
+
+  .gallery-section--content-right .section-content {
+    order: 2;
+  }
+
+  .gallery-section--content-right .section-header {
+    text-align: right;
+  }
+
+  /* Thumbnails: conteúdo à esquerda */
+  .gallery-section--content-left .section-content {
+    order: 1;
+  }
+
+  .gallery-section--content-left .section-spacer {
+    order: 2;
+  }
+
+  .gallery-section--content-left .section-header {
+    text-align: left;
+  }
+
+  .gallery-grid {
+    gap: 1.5rem;
+  }
+}
