@@ -19,8 +19,8 @@
   height: 40px;
   border: none;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--baby-blue-800);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--baby-blue-700);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -35,8 +35,8 @@
 }
 
 .art-card-expand:hover {
-  background: var(--white);
-  color: var(--baby-blue-600);
+  background: var(--baby-blue-100);
+  color: var(--baby-blue-700);
 }
 
 .art-card:hover .art-card-frame {
@@ -71,7 +71,7 @@
   left: 0;
   right: 0;
   padding: 0.85rem 1.1rem;
-  background: linear-gradient(transparent, rgba(42, 83, 105, 0.85));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
   color: var(--white);
   font-size: 1.05rem;
   font-weight: 500;
@@ -85,8 +85,8 @@
   gap: 0.75rem;
   min-height: 200px;
   aspect-ratio: 1;
-  background: linear-gradient(135deg, var(--baby-blue-100) 0%, var(--baby-blue-200) 100%);
-  color: var(--baby-blue-600);
+  background: linear-gradient(135deg, var(--baby-blue-50) 0%, var(--baby-blue-200) 100%);
+  color: var(--baby-blue-700);
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -102,7 +102,7 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(42, 83, 105, 0.92);
+  background: rgba(48, 16, 16, 0.92);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,8 +141,8 @@
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--baby-blue-800);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--baby-blue-700);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -151,6 +151,6 @@
 }
 
 .art-lightbox-close:hover {
-  background: var(--white);
-  color: var(--baby-blue-600);
+  background: var(--baby-blue-100);
+  color: var(--baby-blue-800);
 }

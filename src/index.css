@@ -1,18 +1,24 @@
-/* Paleta azul bebê */
+/* Paleta baseada no vermelho #ee4242 */
 :root {
-  --baby-blue-50: #F0F8FF;
-  --baby-blue-100: #E0F2FE;
-  --baby-blue-200: #C5E0F4;
-  --baby-blue-300: #B8D4E3;
-  --baby-blue-400: #9BC4E2;
-  --baby-blue-500: #7EB8DA;
-  --baby-blue-600: #5A9EC4;
-  --baby-blue-700: #4A8BB5;
-  --baby-blue-800: #3A6F8F;
-  --baby-blue-900: #2A5369;
-  --white: #FFFFFF;
-  --shadow-soft: 0 4px 20px rgba(90, 158, 196, 0.15);
-  --shadow-card: 0 8px 32px rgba(90, 158, 196, 0.2);
+  /* tons claros neutros para o fundo */
+  --baby-blue-50: #fff5f5;
+  --baby-blue-100: #ffe5e5;
+  --baby-blue-200: #ffd1d1;
+
+  /* escala em torno de #ee4242 */
+  --baby-blue-300: #ff9b9b;
+  --baby-blue-400: #ff7a7a;
+  --baby-blue-500: #ee4242; /* cor principal pedida */
+  --baby-blue-600: #d83636;
+  --baby-blue-700: #b82929;
+
+  /* tons escuros para texto */
+  --baby-blue-800: #5a1515;
+  --baby-blue-900: #301010;
+
+  --white: #ffffff;
+  --shadow-soft: 0 4px 20px rgba(48, 16, 16, 0.08);
+  --shadow-card: 0 8px 32px rgba(48, 16, 16, 0.14);
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -34,7 +40,7 @@ html {
 body {
   font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.125rem;
-  background: linear-gradient(180deg, var(--baby-blue-50) 0%, var(--baby-blue-100) 50%, var(--baby-blue-200) 100%);
+  background: radial-gradient(circle at top, var(--baby-blue-100) 0%, var(--baby-blue-50) 45%, #ffffff 100%);
   min-height: 100vh;
   color: var(--baby-blue-900);
   line-height: 1.6;
@@ -64,7 +70,7 @@ a {
 .section-separator {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 0;
+  padding: 1.25rem 1.5rem 0;
 }
 .section-separator img {
   display: block;

@@ -1,5 +1,5 @@
 .footer {
-  background: var(--baby-blue-800);
+  background: var(--baby-blue-900);
   color: var(--baby-blue-100);
   padding: 3rem 1.5rem 2rem;
   scroll-margin-top: 5rem;
@@ -57,7 +57,7 @@
 }
 
 .footer-links a {
-  color: var(--baby-blue-200);
+  color: var(--baby-blue-500);
   font-weight: 500;
   transition: color 0.2s;
 }

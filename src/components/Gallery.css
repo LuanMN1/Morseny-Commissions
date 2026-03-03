@@ -1,7 +1,7 @@
 .gallery-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1.5rem 5rem;
+  padding: 2.5rem 1.5rem 5rem;
 }
 
 .gallery-section {
@@ -46,7 +46,7 @@
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: var(--baby-blue-700);
+  color: var(--baby-blue-200);
   line-height: 1.5;
 }
 
