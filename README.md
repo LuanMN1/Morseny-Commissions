@@ -1,6 +1,6 @@
 # Morseny Commissions
 
-A front-end art portfolio website for digital art and commissions: characters (icons, busts, full body, RPG tokens), illustrations, and more. Built with React and Vite, with a baby blue palette and bilingual support (Portuguese and English).
+A front-end art portfolio website for digital art and commissions: characters (icons, busts, full body, RPG tokens), illustrations, and more. Built with React and Vite, with a white and red palette and bilingual support (Portuguese and English).
 
 ## Features
 
